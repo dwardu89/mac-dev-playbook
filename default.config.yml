@@ -6,17 +6,19 @@ configure_terminal: true
 configure_osx: true
 
 configure_sudoers: false
-sudoers_custom_config: ''
+sudoers_custom_config: ""
 # Example:
 # sudoers_custom_config: |
 #   # Allow users in admin group to use sudo with no password.
 #   %admin ALL=(ALL) NOPASSWD: ALL
 
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
+dotfiles_repo: https://github.com/dwardu89/dotfiles.git
 dotfiles_repo_accept_hostkey: true
-dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
+dotfiles_repo_local_destination: ~/github/dwardu89/dotfiles
 dotfiles_files:
+  - .tmux.conf
   - .zshrc
+  - .gitconfig
   - .gitignore
   - .inputrc
   - .osx
@@ -25,53 +27,85 @@ dotfiles_files:
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
   - autoconf
+  - automake
+  - aws-iam-authenticator
+  - awscli
   - bash-completion
+  - bfg
+  - coreutils
+  - cowsay
+  - curl
+  - direnv
+  - dnsmasq
   - doxygen
+  - fzf
   - gettext
   - gifsicle
   - git
   - github/gh/gh
+  - gnu-time
   - go
   - gpg
+  - htop
   - httpie
+  - imagemagick
   - iperf
+  - kubectx
+  - kubernetes-cli
+  - kubernetes-helm
   - libevent
-  - sqlite
+  - libtool
+  - libxslt
+  - libyaml
+  - mas
   - mcrypt
   - nmap
   - node
   - nvm
-  - php
-  - ssh-copy-id
-  - cowsay
-  - readline
   - openssl
   - pv
+  - rcm
+  - readline
+  - ssh-copy-id
+  - sshfs
+  - tfenv
+  - tmux
+  - unzip
+  - vim
+  - watchman
   - wget
   - wrk
+  - xz
+  - yarn
+  - zlib
+  - zsh
 
 homebrew_taps:
-  - homebrew/core
+  - aws/tap
+  - github/gh
+  - homebrew/bundle
   - homebrew/cask
+  - homebrew/cask-drivers
+  - homebrew/cask-fonts
+  - homebrew/cask-versions
+  - homebrew/core
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - 1password
   - chromedriver
   - docker
-  - dropbox
   - firefox
   - google-chrome
   - handbrake
-  - licecap
   - sequel-pro
   - slack
-  - sublime-text
   - transmit
   - vagrant
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
-mas_email: ""
+mas_email: "x "
 mas_password: ""
 
 osx_script: "~/.osx --no-restart"
