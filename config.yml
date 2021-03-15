@@ -35,6 +35,7 @@ homebrew_installed_packages:
   - coreutils
   - cowsay
   - curl
+  - diff-so-fancy
   - direnv
   - dnsmasq
   - doxygen
@@ -59,15 +60,16 @@ homebrew_installed_packages:
   - libyaml
   - mas
   - mcrypt
+  - neofetch
   - nmap
   - node
   - nvm
   - openssl
+  - pyenv
   - pv
   - rcm
   - readline
   - ssh-copy-id
-  - sshfs
   - tfenv
   - tmux
   - unzip
@@ -78,6 +80,7 @@ homebrew_installed_packages:
   - xz
   - yarn
   - zlib
+  - zgen
   - zsh
 
 homebrew_taps:
