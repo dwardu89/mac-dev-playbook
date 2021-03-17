@@ -80,7 +80,6 @@ homebrew_installed_packages:
   - xz
   - yarn
   - zlib
-  - zgen
   - zsh
 
 homebrew_taps:
@@ -97,8 +96,10 @@ homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - 1password
   - alfred
+  - bettertouchtool
   - chromedriver
   - docker
+  - evernote
   - firefox
   - google-chrome
   - handbrake
@@ -106,8 +107,10 @@ homebrew_cask_apps:
   - protonvpn
   - little-snitch
   - slack
+  - signal
   - vagrant
   - visual-studio-code
+  - whatsapp
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
